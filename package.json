@@ -1,0 +1,16 @@
+{
+  "name": "simple-streams-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engine": ">=18",
+  "scripts": {
+    "seed": "node src/seed/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.2.0"
+  }
+}
