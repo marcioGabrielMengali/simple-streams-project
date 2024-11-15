@@ -5,7 +5,9 @@
   "main": "index.js",
   "engine": ">=18",
   "scripts": {
-    "seed": "node src/seed/seed.js"
+    "seed": "node src/seed/seed.js",
+    "server": "node --watch src/server.js",
+    "upload": "node src/fakeUpload.js"
   },
   "keywords": [],
   "author": "",
