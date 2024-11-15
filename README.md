@@ -18,5 +18,5 @@ npm i
 ```
 #### Generate seed
 ```shell
-npm run sedd
+npm run seed
 ```

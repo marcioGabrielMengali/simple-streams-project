@@ -1,11 +1,11 @@
 const fs = require("fs");
-const path = require("path");
 const { faker } = require("@faker-js/faker");
+const { readDataPath } = require("./../utils/dataPath");
 
 function generateFakeCsv() {
   console.log("Start generating data...");
   const records = [];
-  for (let i = 0; i < 100000; i++) {
+  for (let i = 0; i < 3000000; i++) {
     const name = faker.commerce.product();
     const department = faker.commerce.department();
     const price = faker.commerce.price();
@@ -17,7 +17,8 @@ function generateFakeCsv() {
 function saveData(data) {
   console.log("Saving Data");
   try {
-    fs.writeFileSync(path.join(__dirname, "..", "data", "products.csv"), data);
+    const filePath = readDataPath();
+    fs.writeFileSync(filePath, data);
   } catch (error) {
     console.log("error on saving data", error);
   }
